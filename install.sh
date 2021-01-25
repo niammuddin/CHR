@@ -24,9 +24,9 @@ mount -t tmpfs tmpfs /tmp/
 
 cd /tmp
 
-wget https://download.mikrotik.com/routeros/6.47.7/chr-6.47.7.img.zip
+wget https://download.mikrotik.com/routeros/6.48/chr-6.48.img.zip
 
-unzip chr-6.47.7.img.zip
+unzip chr-6.48.img.zip
 
 if [ -e "/dev/vda" ]
 then
@@ -35,8 +35,10 @@ else
 dd if=chr-6.47.7.img of=/dev/sda bs=4M oflag=sync
 fi
 
+sleep 2
 echo 1 > /proc/sys/kernel/sysrq
+echo ">>> Finished Installing MIkrotik CHR <<<"
 echo b > /proc/sysrq-trigger
 
-echo ">>> Finished Installing MIkrotik CHR <<<"
+
 
