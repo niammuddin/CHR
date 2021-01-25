@@ -30,9 +30,9 @@ unzip chr-6.48.img.zip
 
 if [ -e "/dev/vda" ]
 then
-dd if=chr-6.47.7.img of=/dev/vda bs=4M oflag=sync
+dd if=chr-6.48.img of=/dev/vda bs=4M oflag=sync
 else
-dd if=chr-6.47.7.img of=/dev/sda bs=4M oflag=sync
+dd if=chr-6.48.img of=/dev/sda bs=4M oflag=sync
 fi
 
 sleep 2
