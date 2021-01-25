@@ -34,10 +34,12 @@ dd if=chr-6.48.img of=/dev/vda bs=4M oflag=sync
 else
 dd if=chr-6.48.img of=/dev/sda bs=4M oflag=sync
 fi
-
 sleep 2
-echo 1 > /proc/sys/kernel/sysrq
+
 echo ">>> Finished Installing MIkrotik CHR <<<"
+sleep 5
+
+echo 1 > /proc/sys/kernel/sysrq
 echo b > /proc/sysrq-trigger
 
 
