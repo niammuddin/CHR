@@ -5,19 +5,19 @@ read -p "Are you want to Update this system [y/n] " update
 if [[ $update =~ ^[Yy]$ ]]
 	then
 		sudo apt-get update -y
-		read -p "Are you want to upgrade this system [y/n] " upgrade
-		if [[ $upgrade =~ ^[Yy]$ ]]
-		then 
-			sudo apt-get upgrade -y
-		fi
+# 		read -p "Are you want to upgrade this system [y/n] " upgrade
+# 		if [[ $upgrade =~ ^[Yy]$ ]]
+# 		then 
+# 			sudo apt-get upgrade -y
+# 		fi
 
 fi  
 
 # Install modul
-read -p "Install wget, git, zip, unzip [y/n] " modul
+read -p "Install wget, unzip [y/n] " modul
 if [[ $modul =~ ^[Yy]$ ]]
 	then
-		sudo apt-get install -y wget git zip unzip
+		sudo apt-get install -y wget unzip
 fi
 
 mount -t tmpfs tmpfs /tmp/
