@@ -24,15 +24,15 @@ mount -t tmpfs tmpfs /tmp/
 
 cd /tmp
 
-wget https://download.mikrotik.com/routeros/6.48/chr-6.48.img.zip
+wget https://download.mikrotik.com/routeros/6.47.10/chr-6.47.10.img.zip
 
-unzip chr-6.48.img.zip
+unzip chr-6.47.10.img
 
 if [ -e "/dev/vda" ]
 then
-dd if=chr-6.48.img of=/dev/vda bs=4M oflag=sync
+dd if=chr-6.47.10.img of=/dev/vda bs=4M oflag=sync
 else
-dd if=chr-6.48.img of=/dev/sda bs=4M oflag=sync
+dd if=chr-6.47.10.img of=/dev/sda bs=4M oflag=sync
 fi
 sleep 2
 
