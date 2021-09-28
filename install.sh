@@ -26,7 +26,7 @@ cd /tmp
 
 wget https://download.mikrotik.com/routeros/6.47.10/chr-6.47.10.img.zip
 
-unzip chr-6.47.10.img
+unzip chr-6.47.10.img.zip
 
 if [ -e "/dev/vda" ]
 then
