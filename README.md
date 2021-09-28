@@ -1,4 +1,4 @@
-auto install CHR MikroTik version 6.48 stable
+auto install CHR MikroTik version chr-6.47.10
 
 # Install
 
